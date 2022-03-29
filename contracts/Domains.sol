@@ -14,8 +14,8 @@ contract Domains is ERC721URIStorage {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    string svgPartOne = '';
-    string svgPartTwo = '';
+    string svgPartOne = '<svg width="270" height="283" viewBox="0 0 270 283" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="270" height="283" fill="white"/><rect width="270" height="283" fill="#847DD9"/><path d="M135 56L172.239 128H97.7609L135 56Z" fill="#07FCD0"/><path d="M135 227L97.7609 128.75H172.239L135 227Z" fill="#07FCD0"/><path d="M219.5 141.5C219.5 188.45 181.886 226.5 135.5 226.5C89.1136 226.5 51.5 188.45 51.5 141.5C51.5 94.5502 89.1136 56.5 135.5 56.5C181.886 56.5 219.5 94.5502 219.5 141.5Z" stroke="#07FCD0"/></svg>';
+    string svgPartTwo = '</text></svg>';
 
     string public tld;
 
