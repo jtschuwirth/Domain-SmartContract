@@ -10,6 +10,9 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
+let mnemonic = process.env.MNEMONIC;
+harmony_testnet_url = 'https://api.s0.b.hmny.io';
+
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
 
@@ -18,4 +21,10 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: "0.8.10",
+  networks: {
+		harmony_testnet: {
+      url: harmony_testnet_url,
+      accounts: [mnemonic],
+		}
+  }
 };
